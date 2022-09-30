@@ -45,6 +45,7 @@ function PostFetch(datos, data){
     });
   }
   RevisarMax()
+  RevisarMin()
 }
 
 function Buscar(){
@@ -61,9 +62,7 @@ function MostrarMenos(){
     a = a - 1
     document.getElementById("Pagina").innerHTML = a
     CallApi(InicialNombre, Proximo)
-    if(a === 1){
-      document.getElementById("Anterior").setAttribute("Class","NoHay")
-    }
+    RevisarMin()
   } else {
     Proximo += 50
   }
@@ -88,6 +87,12 @@ function RevisarMax(){
     document.getElementById("Siguiente").setAttribute("class","NoHay")
   } else {
     document.getElementById("Siguiente").removeAttribute("class","NoHay")
+  }
+}
+
+function RevisarMin(){
+  if(a === 1){
+    document.getElementById("Anterior").setAttribute("Class","NoHay")
   }
 }
 
