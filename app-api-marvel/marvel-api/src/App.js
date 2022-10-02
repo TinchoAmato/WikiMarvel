@@ -6,6 +6,9 @@ var datosParaDespues
 var a = 1
 var Maximo
 
+
+
+
 const CallApi = async (InicialNombre, Diferencia) => {
   try {
     if (InicialNombre !== "" ){
@@ -49,6 +52,9 @@ function PostFetch(datos, data){
 }
 
 function Buscar(){
+  const BtnBuscar = document.querySelector('#Buscar')
+  BtnBuscar.classList.remove('BotonBuscar')
+  setTimeout(() => {BtnBuscar.classList.add('BotonBuscar')}, 100)
   a = 1
   document.getElementById("Pagina").innerHTML = a
   var InicialNombre = document.getElementById('InicialNombre').value
@@ -101,10 +107,12 @@ class Header extends Component{
     return(
       <div id="Header">
         <i>Icon</i>
-        <h1>Marvel</h1>
+        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png'></img>
         <div>
-          <input id="InicialNombre"></input>
-          <button id='Buscar' onClick={Buscar}>Search</button>
+          <input id="InicialNombre" maxLength="15"></input>
+          <button id='Buscar' onClick={Buscar}><span className="material-symbols-outlined">
+search
+</span></button>
         </div>
       </div>
     )
@@ -125,9 +133,13 @@ class Paginas extends Component{
   render(){
     return(
       <div id="Numeracion">
-        <button onClick={MostrarMenos} id="Anterior" className='NoHay'>Anterior</button>
+        <button onClick={MostrarMenos} id="Anterior" className='NoHay'><a href='#'><span className="material-symbols-outlined">
+arrow_back_ios
+</span></a></button>
         <h1 id="Pagina">1</h1>
-        <button onClick={MostrarMas} id="Siguiente">Siguiente</button>
+        <button onClick={MostrarMas} id="Siguiente"><a href='#'><span className="material-symbols-outlined">
+        arrow_back_ios
+</span></a></button>
       </div>
     )
   }
