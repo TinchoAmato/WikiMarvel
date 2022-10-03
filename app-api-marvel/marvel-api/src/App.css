@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/61e13817d1cc1fcfc870b062e2d09646?family=CCBiffBamBoom);
 
 html, body{
   width: 100%;
+  background-image: url('https://t4.ftcdn.net/jpg/03/85/27/85/360_F_385278569_rhMNc7dVhejyXkmX2RAR6aNHXuMeO3n6.jpg');
+  background-size: 30%;
 }
 
 *{
-  font-family: 'Cabin', sans-serif;
+  font-family: 'ccbiffbamboom', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,8 +27,11 @@ a, a:active, a:hover, a:target{
 }
 
 #Header{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   height: 13vh;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.8);
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -55,10 +63,11 @@ a, a:active, a:hover, a:target{
 }
 
 .BotonBuscar{
-  animation: rotation 1s;
+  animation: rotation 0.5s;
 }
 
 #Personajes{
+  padding-top: 17vh;
   justify-content:space-evenly;
   display: flex;
   flex-wrap: wrap;
@@ -66,12 +75,14 @@ a, a:active, a:hover, a:target{
 }
 
 #Personajes > *{
+  border: 3px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: gray;
-  width: 15%;
+  background-image: url('https://previews.123rf.com/images/azaman357/azaman3571611/azaman357161100040/68996909-fondo-c%C3%B3mic-viejo-estilo-de-revista-del-vintage-pantalla-de-di%C3%A1logo-de-dibujos-animados.jpg');
+  background-size: contain;
+  width: 20%;
   min-width: 200px;
   max-height: 200px;
   height: 50vh;
@@ -80,9 +91,18 @@ a, a:active, a:hover, a:target{
 }
 
 #Personajes > * > div {
+  border: 3px solid black;
   background-size: cover;
   width: 90%;
-  height: 80%;
+  height: 75%;
+}
+
+#Personajes > * > p{
+  padding: 3px;
+  background-color: yellow;
+  border: 2px solid black;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #Personajes > *:hover{

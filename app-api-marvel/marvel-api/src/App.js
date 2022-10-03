@@ -6,9 +6,6 @@ var datosParaDespues
 var a = 1
 var Maximo
 
-
-
-
 const CallApi = async (InicialNombre, Diferencia) => {
   try {
     if (InicialNombre !== "" ){
@@ -106,13 +103,17 @@ class Header extends Component{
   render(){
     return(
       <div id="Header">
-        <i>Icon</i>
+        <div>
+
+        </div>
         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png'></img>
         <div>
           <input id="InicialNombre" maxLength="15"></input>
-          <button id='Buscar' onClick={Buscar}><span className="material-symbols-outlined">
-search
-</span></button>
+          <button id='Buscar' onClick={Buscar}>
+            <span className="material-symbols-outlined">
+              search
+            </span>
+          </button>
         </div>
       </div>
     )
@@ -133,13 +134,21 @@ class Paginas extends Component{
   render(){
     return(
       <div id="Numeracion">
-        <button onClick={MostrarMenos} id="Anterior" className='NoHay'><a href='#'><span className="material-symbols-outlined">
-arrow_back_ios
-</span></a></button>
+        <button onClick={MostrarMenos} id="Anterior" className='NoHay'>
+          <a href='#'>
+            <span className="material-symbols-outlined">
+              arrow_back_ios
+            </span> 
+          </a>
+        </button>
         <h1 id="Pagina">1</h1>
-        <button onClick={MostrarMas} id="Siguiente"><a href='#'><span className="material-symbols-outlined">
-        arrow_back_ios
-</span></a></button>
+        <button onClick={MostrarMas} id="Siguiente">
+          <a href='#'>
+            <span className="material-symbols-outlined">
+              arrow_back_ios
+            </span>
+          </a>
+        </button>
       </div>
     )
   }
