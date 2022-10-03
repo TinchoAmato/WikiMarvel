@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/WikiMarvel/static/css/main.10760c33.css",
-    "main.js": "/WikiMarvel/static/js/main.3e6e56a6.js",
+    "main.css": "/WikiMarvel/static/css/main.090daeff.css",
+    "main.js": "/WikiMarvel/static/js/main.b5df2045.js",
     "static/js/787.6f7beb31.chunk.js": "/WikiMarvel/static/js/787.6f7beb31.chunk.js",
     "index.html": "/WikiMarvel/index.html",
-    "main.10760c33.css.map": "/WikiMarvel/static/css/main.10760c33.css.map",
-    "main.3e6e56a6.js.map": "/WikiMarvel/static/js/main.3e6e56a6.js.map",
+    "main.090daeff.css.map": "/WikiMarvel/static/css/main.090daeff.css.map",
+    "main.b5df2045.js.map": "/WikiMarvel/static/js/main.b5df2045.js.map",
     "787.6f7beb31.chunk.js.map": "/WikiMarvel/static/js/787.6f7beb31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10760c33.css",
-    "static/js/main.3e6e56a6.js"
+    "static/css/main.090daeff.css",
+    "static/js/main.b5df2045.js"
   ]
 }
