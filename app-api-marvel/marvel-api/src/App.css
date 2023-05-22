@@ -46,6 +46,7 @@ a, a:active, a:hover, a:target{
 #Header > img{
   margin: auto;
   height: 10vh;
+  widht: 10vw;
 }
 
 #InicialNombre{
